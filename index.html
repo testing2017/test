@@ -13,21 +13,18 @@
     <button type="button" name="button">China</button>
     <button type="button" name="button">USA</button>
     <button type="button" name="button">Ecuador</button>
-    <!-- begin Wootric code -->
-<script type="text/javascript">
-   wootric_survey_immediately = true; // Shows survey immediately for testing purposes.  TODO: Comment out for production.
-   window.wootricSettings = {
-      //email: 'customer@example.com', // TODO: The current logged in user's email address. OPTIONAL
-      // external_id: 'abc123', // TODO: The current logged in user's unique ID in your system.  Reference field for external integrations only.  OPTIONAL
-      created_at: 1234567890, // TODO: The current logged in user's sign-up date as a 10 digit Unix timestamp in seconds. OPTIONAL
-      account_token: 'NPS-e9b13763' // This is your unique account token.
-  };
-</script>
-<script type="text/javascript" src="https://testing2017.github.io/test/beacon.js"></script>
-<script type="text/javascript">
-  // This loads the Wootric survey
-  window.wootric('run');
-</script>
-<!-- end Wootric code -->
+                              <!-- begin uPromoter code -->
+                              <script type="text/javascript">
+                                 wootric_survey_immediately = true;
+                                 window.wootricSettings = {
+                                    created_at: 1234567890,
+                                    account_token: 'NPS-e9b13763'
+                                };
+                              </script>
+                              <script type="text/javascript" src="https://testing2017.github.io/test/beacon.js"></script>
+                              <script type="text/javascript">
+                                window.wootric('run');
+                              </script>
+                              <!-- end uPromoter code -->
   </body>
 </html>
